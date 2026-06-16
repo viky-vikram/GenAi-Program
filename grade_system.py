@@ -1,120 +1,45 @@
-students = {}
+def calculate_grade(mark):
+    """
+    Returns the grade based on the mark entered.
+    """
 
-def add_student():
-    name = input("Enter student name: ")
-    marks = float(input("Enter marks: "))
-    students[name] = marks
-    print("Student added successfully!")
-
-def view_students():
-    if not students:
-        print("No students found.")
-    else:
-        print("\nStudent Grades:")
-        for name, marks in students.items():
-            grade = calculate_grade(marks)
-            print(f"{name} - Marks: {marks}, Grade: {grade}")
-
-def calculate_grade(marks):
-    if marks >= 90:
+    if 90 <= mark <= 100:
         return "A"
-    elif marks >= 75:
+    elif 80 <= mark <= 89:
         return "B"
-    elif marks >= 60:
+    elif 70 <= mark <= 79:
         return "C"
-    elif marks >= 40:
+    elif 60 <= mark <= 69:
         return "D"
     else:
-        return "Fail"
+        return "E"
 
-def search_student():
-    name = input("Enter student name to search: ")
-    if name in students:
-        marks = students[name]
-        print(f"{name} - Marks: {marks}, Grade: {calculate_grade(marks)}")
-    else:
-        print("Student not found.")
 
 def main():
-    while True:
-        print("\n--- Student Grade Manager ---")
-        print("1. Add Student")
-        print("2. View All Students")
-        print("3. Search Student")
-        print("4. Exit")
+    print("=== Grade Calculator ===")
 
-        choice = input("Enter your choice: ")
+    try:
+        # Get input from user
+        mark = float(input("Enter mark (0-100): "))
 
-        if choice == "1":
-            add_student()
-        elif choice == "2":
-            view_students()
-        elif choice == "3":
-            search_student()
-        elif choice == "4":
-            print("Exiting program...")
-            break
-        else:
-            print("Invalid choice. Try again.")
+        # Validate range
+        if mark < 0 or mark > 100:
+            print("Error: Mark must be between 0 and 100.")
+            return
 
-main()
-students = {}
+        # Calculate grade
+        grade = calculate_grade(mark)
 
-def add_student():
-    name = input("Enter student name: ")
-    marks = float(input("Enter marks: "))
-    students[name] = marks
-    print("Student added successfully!")
+        # Display result
+        print("\nResult")
+        print("------")
+        print(f"Mark Entered : {mark}")
+        print(f"Grade        : {grade}")
 
-def view_students():
-    if not students:
-        print("No students found.")
-    else:
-        print("\nStudent Grades:")
-        for name, marks in students.items():
-            grade = calculate_grade(marks)
-            print(f"{name} - Marks: {marks}, Grade: {grade}")
+    except ValueError:
+        print("Error: Please enter a valid numeric value.")
 
-def calculate_grade(marks):
-    if marks >= 90:
-        return "A"
-    elif marks >= 75:
-        return "B"
-    elif marks >= 60:
-        return "C"
-    elif marks >= 40:
-        return "D"
-    else:
-        return "Fail"
 
-def search_student():
-    name = input("Enter student name to search: ")
-    if name in students:
-        marks = students[name]
-        print(f"{name} - Marks: {marks}, Grade: {calculate_grade(marks)}")
-    else:
-        print("Student not found.")
-
-def main():
-    while True:
-        print("\n--- Student Grade Manager ---")
-        print("1. Add Student")
-        print("2. View All Students")
-        print("3. Search Student")
-        print("4. Exit")
-
-        choice = input("Enter your choice: ")
-
-        if choice == "1":
-            add_student()
-        elif choice == "2":
-            view_students()
-        elif choice == "3":
-            search_student()
-        elif choice == "4":
-            print("Exiting program...")
-            break
-        else:
-            print("Invalid choice. Try again.")
-
-main()
+# Program entry point
+if __name__ == "__main__":
+    main()
