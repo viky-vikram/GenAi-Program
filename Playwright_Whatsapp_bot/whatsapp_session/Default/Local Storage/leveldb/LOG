@@ -1,8 +1,6 @@
-2026/06/18-01:31:34.583 6fa0 Reusing MANIFEST c:\Users\vikyd\Downloads\GenAi Program\Playwright_Whatsapp_bot\whatsapp_session\Default\Local Storage\leveldb/MANIFEST-000001
-2026/06/18-01:31:34.589 6fa0 Recovering log #4
-2026/06/18-01:31:34.589 6fa0 Level-0 table #7: started
-2026/06/18-01:31:34.597 6fa0 Level-0 table #7: 15210 bytes OK
-2026/06/18-01:31:34.598 6fa0 Recovering log #7
-2026/06/18-01:31:34.601 6fa0 Reusing old log c:\Users\vikyd\Downloads\GenAi Program\Playwright_Whatsapp_bot\whatsapp_session\Default\Local Storage\leveldb/000007.log 
-2026/06/18-01:31:34.613 6fa0 Delete type=0 #4
-2026/06/18-01:31:34.614 6fa0 Delete type=2 #8
+2026/06/18-01:43:08.600 a7b8 Reusing MANIFEST C:\Users\vikyd\Downloads\GenAi Program\Playwright_Whatsapp_bot\whatsapp_session\Default\Local Storage\leveldb/MANIFEST-000001
+2026/06/18-01:43:08.606 a7b8 Recovering log #7
+2026/06/18-01:43:08.608 a7b8 Reusing old log C:\Users\vikyd\Downloads\GenAi Program\Playwright_Whatsapp_bot\whatsapp_session\Default\Local Storage\leveldb/000007.log 
+2026/06/18-01:43:38.022 9600 Level-0 table #10: started
+2026/06/18-01:43:38.030 9600 Level-0 table #10: 15282 bytes OK
+2026/06/18-01:43:38.033 9600 Delete type=0 #7
