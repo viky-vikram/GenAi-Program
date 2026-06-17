@@ -1,29 +1,28 @@
-# Student Grade System
+# Grade Calculator
 
-A simple Python application to manage student grades and calculate performance based on marks.
+A simple Python application that converts a student's mark into a grade based on a predefined grading scale.
 
 ## Features
 
-- Add student details
-- Store student marks
-- Calculate grades automatically
-- View all student records
-- Search for a specific student
-- Simple console-based interface
+* Accepts marks from the user
+* Validates input range (0–100)
+* Calculates grades automatically
+* Handles invalid inputs gracefully
+* Uses only Python standard library
 
-## Grade Calculation
+## Grading Scale
 
-| Marks | Grade |
-|-------|-------|
-| 90 - 100 | A |
-| 75 - 89 | B |
-| 60 - 74 | C |
-| 40 - 59 | D |
-| Below 40 | Fail |
+| Mark Range | Grade |
+| ---------- | ----- |
+| 90 - 100   | A     |
+| 80 - 89    | B     |
+| 70 - 79    | C     |
+| 60 - 69    | D     |
+| Below 60   | E     |
 
-## Prerequisites
+## Requirements
 
-- Python 3.x
+* Python 3.x
 
 ## How to Run
 
@@ -33,32 +32,48 @@ A simple Python application to manage student grades and calculate performance b
 git clone https://github.com/viky-vikram/GenAi-Program.git
 ```
 
-2. Navigate to the project folder:
+2. Navigate to the project directory:
 
 ```bash
 cd GenAi-Program
 ```
 
-3. Run the application:
+3. Run the program:
 
 ```bash
-python studentGradeSystem.py
+python grade_system.py
 ```
 
-## Example
+## Sample Output
+
+### Valid Input
 
 ```text
---- Student Grade Manager ---
-1. Add Student
-2. View All Students
-3. Search Student
-4. Exit
+=== Grade Calculator ===
+Enter mark (0-100): 85
 
-Enter your choice: 1
-Enter student name: John
-Enter marks: 85
+Result
+------
+Mark Entered : 85.0
+Grade        : B
+```
 
-Student added successfully!
+### Invalid Range
+
+```text
+=== Grade Calculator ===
+Enter mark (0-100): 120
+
+Error: Mark must be between 0 and 100.
+```
+
+### Invalid Input
+
+```text
+=== Grade Calculator ===
+Enter mark (0-100): abc
+
+Error: Please enter a valid numeric value.
 ```
 
 ## Project Structure
@@ -66,17 +81,20 @@ Student added successfully!
 ```text
 GenAi-Program/
 │
-├── studentGradeSystem.py
+├── grade_system.py
+├── requirements.txt
+├── .gitignore
 └── README.md
 ```
 
-## Future Enhancements
+## Concepts Used
 
-- Save student records to a file
-- Update existing student marks
-- Delete student records
-- Generate reports
-- Add graphical user interface (GUI)
+* Variables
+* Functions
+* Conditional Statements (if-elif-else)
+* User Input
+* Exception Handling (try-except)
+* Data Validation
 
 ## Author
 
