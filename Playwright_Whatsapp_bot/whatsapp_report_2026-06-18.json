@@ -1,0 +1,15 @@
+[
+    {
+        "name": "Vikram",
+        "phone": "919884476411",
+        "message": "Hi Vikram this is a test message from the bot",
+        "status": "Sent",
+        "error": "",
+        "screenshot": "c:\\Users\\vikyd\\Downloads\\GenAi Program\\Playwright_Whatsapp_bot\\screenshots\\Vikram_2026-06-18.png",
+        "last_3_messages": [
+            "Hi Vikram this is a test message from the bot",
+            "Hi Vikram this is a test message from the bot",
+            "Hi Vikram this is a test message from the bot"
+        ]
+    }
+]
